@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ea9ab"
+    tools:context=".MovieViewFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView4"
+        android:layout_width="136dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/view_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@tools:sample/avatars" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Alamat ni Cardo"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/materialCardView4"
+        app:layout_constraintTop_toTopOf="@+id/materialCardView4" />
+
+    <TextView
+        android:id="@+id/review_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Year"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/review_title"
+        app:layout_constraintTop_toBottomOf="@+id/review_title" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sypnosis"
+        android:textAlignment="viewStart"
+        android:textColor="#8ea9ab"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/review_year"
+        app:layout_constraintTop_toBottomOf="@+id/review_year" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Ratings |"
+        android:textSize="16sp"
+        android:textAlignment="viewStart"
+        android:textColor="#8ea9ab"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView4"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView4" />
+
+    <TextView
+        android:id="@+id/review_sypnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sypnosis Content"
+        android:textColor="#8c8c8c"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <RatingBar
+        android:id="@+id/review_rating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-55dp"
+        android:layout_marginTop="5dp"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/review_submit_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="SUBMIT REVIEW"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/review_comment"
+        app:layout_constraintStart_toStartOf="@+id/review_comment"
+        app:layout_constraintTop_toBottomOf="@+id/review_comment" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="412dp"
+        android:layout_height="558dp"
+        android:elevation="-10dp"
+        android:src="@drawable/rounded_corners_white_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_arrow_back"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/rounded_corners_blue"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/review_rating" />
+
+    <EditText
+        android:id="@+id/review_comment"
+        android:layout_width="0dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_corners_white"
+        android:elevation="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Comment"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

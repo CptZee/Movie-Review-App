@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthenticatedFragment"
+    android:background="#8ea9ab">
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="155dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/logotype_filmograph"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_corners_bottom"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:strokeColor="#8ea9ab"
+        app:strokeWidth="3dp">
+
+        <ImageView
+            android:id="@+id/authenticated_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@tools:sample/avatars" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/authenticated_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="10dp"
+        android:text="TextView"
+        android:textColor="#8ea9ab"
+        android:textSize="20sp"
+        android:textStyle="bold | italic"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardView5"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView5"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/authenticated_setup"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:text="SET UP ACCOUNT"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_setup"
+        android:drawablePadding="10dp"
+        android:paddingStart="20dp"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:paddingEnd="15dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/authenticated_username"
+        app:layout_constraintStart_toStartOf="@+id/authenticated_username"
+        app:layout_constraintTop_toBottomOf="@+id/authenticated_username" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/authenticated_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:text="SIGN OUT"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_sign_out"
+        android:drawablePadding="10dp"
+        android:paddingStart="20dp"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:paddingEnd="15dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/authenticated_setup"
+        app:layout_constraintStart_toStartOf="@+id/authenticated_setup"
+        app:layout_constraintTop_toBottomOf="@+id/authenticated_setup" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-70dp"
+        android:src="@drawable/rounded_corners_white_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
